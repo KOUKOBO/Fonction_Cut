@@ -1,2 +1,6 @@
 # Fonction_Cut
-Présentation de la fonction cut.
+Souvent pour les besoins de l’analyse, il est nécessaire de découper une variable numérique en catégories distinctes, créant ainsi une variable catégorielle avec plusieurs modalités. Par exemple, il peut être pertinent de constituer des groupes d'âge à partir de la variable âge. Dans notre cas, nous découperons le prix des AIRBNB en 4 tranches.
+La fonction cut() permet de transformer une variable numérique quantitative en facteur correspondant à des tranches. Outre la variable à découper, elle prend un certain nombre d’arguments, que sont :
+  •	breaks indique soit le nombre de classes souhaité, soit un vecteur  indiquant les limites de ces tranches. Il est conseillé, d’inclure les deux infinis comme limites des tranches, afin de couvrir l’ensemble des valeurs,
+  •	include.lowest et right influent sur la manière dont les valeurs situées à la frontière des classes seront inclues ou exclues. Par défaut, les tranches générées sont des intervalles ouverts à gauche et fermés à droite, signifiant que l'intervalle va de a (exclu) à b (inclus). Si l'on souhaite obtenir des tranches ouvertes à droite et fermées à gauche, il suffit d'ajouter l'option RIGHT=FALSE;
+  •	dig.lab indique le nombre de chiffres après la virgule à conserver dans les noms de modalités. 
